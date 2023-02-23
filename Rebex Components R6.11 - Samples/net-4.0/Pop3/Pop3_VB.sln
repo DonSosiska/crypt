@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Pop3Browser_VB", "Pop3Browser_VB\Pop3Browser_VB.vbproj", "{740BDED4-C4A9-41D7-95DC-FF6B4D2EA532}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Pop3ConsoleClient_VB", "Pop3ConsoleClient_VB\Pop3ConsoleClient_VB.vbproj", "{8688ED84-7768-4FE7-839C-5ED68C0D2006}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Pop3Download_VB", "Pop3Download_VB\Pop3Download_VB.vbproj", "{2C447615-B05A-45F1-ACF6-C7CE4E418642}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{740BDED4-C4A9-41D7-95DC-FF6B4D2EA532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740BDED4-C4A9-41D7-95DC-FF6B4D2EA532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740BDED4-C4A9-41D7-95DC-FF6B4D2EA532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740BDED4-C4A9-41D7-95DC-FF6B4D2EA532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8688ED84-7768-4FE7-839C-5ED68C0D2006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8688ED84-7768-4FE7-839C-5ED68C0D2006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8688ED84-7768-4FE7-839C-5ED68C0D2006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8688ED84-7768-4FE7-839C-5ED68C0D2006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C447615-B05A-45F1-ACF6-C7CE4E418642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C447615-B05A-45F1-ACF6-C7CE4E418642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C447615-B05A-45F1-ACF6-C7CE4E418642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C447615-B05A-45F1-ACF6-C7CE4E418642}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

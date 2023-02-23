@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>MailConverter</AssemblyName>
+    <ProjectGuid>a76a9a69-a933-4e23-93cd-3376ab961411</ProjectGuid>
+    <TargetFramework>net7.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Rebex.Samples</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Rebex.Common">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-7.0\Rebex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Mail">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-7.0\Rebex.Mail.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\TrialKey.vb">
+      <Link>TrialKey.vb</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

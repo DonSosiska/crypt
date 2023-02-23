@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2627F05D-EF88-41BF-8B20-440F51D6A689}</ProjectGuid>
+    <Configuration Condition="'$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>rebex.ico</ApplicationIcon>
+    <AssemblyName>MailSendWinForm</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rebex.Samples</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;FX45</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <WarningLevel>4</WarningLevel>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DOTNET20</DefineConstants>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <WarningLevel>4</WarningLevel>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Rebex.Mail">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-4.6\Rebex.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Common">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-4.6\Rebex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Networking">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-4.6\Rebex.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Smtp">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-4.6\Rebex.Smtp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Shared\Configuration.cs" />
+    <Compile Include="Shared\SecurityConfig.cs" />
+    <Compile Include="Shared\Verifier.cs" />
+    <Compile Include="Shared\VerifierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\TrialKey.cs">
+      <Link>TrialKey.cs</Link>
+    </Compile>
+    <None Include="envelope.gif" />
+    <None Include="rebex.ico" />
+    <EmbeddedResource Include="Shared\SecurityConfig.resx">
+      <DependentUpon>SecurityConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\VerifierForm.resx">
+      <DependentUpon>VerifierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailForm.resx">
+      <DependentUpon>MailForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program.resx">
+      <DependentUpon>Program.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress.resx">
+      <DependentUpon>Progress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>MailExtractAttachments</AssemblyName>
+    <ProjectGuid>9036c0ad-0561-4ba0-8433-9d642bd0a331</ProjectGuid>
+    <TargetFramework>net7.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Rebex.Samples</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Rebex.Mail">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-7.0\Rebex.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Common">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-7.0\Rebex.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\TrialKey.cs">
+      <Link>TrialKey.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EwsBrowser</AssemblyName>
+    <ProjectGuid>4e81bdd8-9151-4428-a988-079f51c144d5</ProjectGuid>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rebex.Samples</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Update="Microsoft.WindowsDesktop.App;Microsoft.WindowsDesktop.App.WindowsForms" TargetingPackVersion="6.0.0" />
+    <PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Rebex.Common">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-6.0\Rebex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Ews">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-6.0\Rebex.Ews.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Mail">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-6.0\Rebex.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Networking">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-6.0\Rebex.Networking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\TrialKey.vb">
+      <Link>TrialKey.vb</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

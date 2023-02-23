@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>MailEditor</AssemblyName>
+    <ProjectGuid>bba92fb2-e146-46b0-9fe2-33a75aa5c1bb</ProjectGuid>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rebex.Samples</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Update="Microsoft.WindowsDesktop.App;Microsoft.WindowsDesktop.App.WindowsForms" TargetingPackVersion="6.0.0" />
+    <PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Rebex.Common">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-6.0\Rebex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Mail">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-6.0\Rebex.Mail.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\TrialKey.vb">
+      <Link>TrialKey.vb</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

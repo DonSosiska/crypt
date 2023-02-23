@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16892B50-E30F-4CBD-B8D2-5A555B64F3FA}</ProjectGuid>
+    <Configuration Condition="'$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>rebex.ico</ApplicationIcon>
+    <AssemblyName>MimeExplorer</AssemblyName>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Rebex.Samples</RootNamespace>
+    <StartupObject>Rebex.Samples.MimeExplorer</StartupObject>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>SECURE=True,DOTNET20=True</DefineConstants>
+    <DocumentationFile>MimeExplorer.xml</DocumentationFile>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <WarningLevel>1</WarningLevel>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DOTNET20=True</DefineConstants>
+    <DocumentationFile>MimeExplorer.xml</DocumentationFile>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <WarningLevel>1</WarningLevel>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Rebex.Mail">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-4.0\Rebex.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Common">
+      <HintPath>C:\Program Files (x86)\Rebex Components R6.11\bin\net-4.0\Rebex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MimeExplorer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ValidationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidationHelper.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\TrialKey.vb">
+      <Link>TrialKey.vb</Link>
+    </Compile>
+    <EmbeddedResource Include="MimeExplorer.resx">
+      <DependentUpon>MimeExplorer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resources\alternative.ico" />
+    <EmbeddedResource Include="resources\application.ico" />
+    <EmbeddedResource Include="resources\audio.ico" />
+    <EmbeddedResource Include="resources\digest.ico" />
+    <EmbeddedResource Include="resources\folder.ico" />
+    <EmbeddedResource Include="resources\foldersave.ico" />
+    <EmbeddedResource Include="resources\image.ico" />
+    <EmbeddedResource Include="resources\info.ico" />
+    <EmbeddedResource Include="resources\leaf.ico" />
+    <EmbeddedResource Include="resources\message.ico" />
+    <EmbeddedResource Include="resources\report.ico" />
+    <EmbeddedResource Include="resources\signed.ico" />
+    <EmbeddedResource Include="resources\text.ico" />
+    <EmbeddedResource Include="resources\texthtml.ico" />
+    <EmbeddedResource Include="ValidationForm.resx">
+      <DependentUpon>ValidationForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewer.resx">
+      <DependentUpon>Viewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="rebex.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

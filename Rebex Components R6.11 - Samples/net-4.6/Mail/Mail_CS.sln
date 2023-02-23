@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailConverter_CS", "MailConverter_CS\MailConverter_CS.csproj", "{C1D4F5D6-7E81-49F9-9126-23F452FF3924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailEditor_CS", "MailEditor_CS\MailEditor_CS.csproj", "{5DBBEC87-E1AF-4356-A648-EB8279AB8E57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailExtractAttachments_CS", "MailExtractAttachments_CS\MailExtractAttachments_CS.csproj", "{9036C0AD-0561-4BA0-8433-9D642BD0A331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSendWinForm_CS", "MailSendWinForm_CS\MailSendWinForm_CS.csproj", "{2627F05D-EF88-41BF-8B20-440F51D6A689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSend_CS", "MailSend_CS\MailSend_CS.csproj", "{38F92713-205C-4740-9807-35B161971923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailVerifyAddress_CS", "MailVerifyAddress_CS\MailVerifyAddress_CS.csproj", "{9326A28A-1093-4579-A97F-8C9587A38371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeExplorer_CS", "MimeExplorer_CS\MimeExplorer_CS.csproj", "{ACF3445A-0F0B-4888-B963-3806A443FC93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1D4F5D6-7E81-49F9-9126-23F452FF3924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D4F5D6-7E81-49F9-9126-23F452FF3924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D4F5D6-7E81-49F9-9126-23F452FF3924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D4F5D6-7E81-49F9-9126-23F452FF3924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBBEC87-E1AF-4356-A648-EB8279AB8E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBBEC87-E1AF-4356-A648-EB8279AB8E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBBEC87-E1AF-4356-A648-EB8279AB8E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBBEC87-E1AF-4356-A648-EB8279AB8E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9036C0AD-0561-4BA0-8433-9D642BD0A331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9036C0AD-0561-4BA0-8433-9D642BD0A331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9036C0AD-0561-4BA0-8433-9D642BD0A331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9036C0AD-0561-4BA0-8433-9D642BD0A331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2627F05D-EF88-41BF-8B20-440F51D6A689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2627F05D-EF88-41BF-8B20-440F51D6A689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2627F05D-EF88-41BF-8B20-440F51D6A689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2627F05D-EF88-41BF-8B20-440F51D6A689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F92713-205C-4740-9807-35B161971923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F92713-205C-4740-9807-35B161971923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F92713-205C-4740-9807-35B161971923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F92713-205C-4740-9807-35B161971923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9326A28A-1093-4579-A97F-8C9587A38371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9326A28A-1093-4579-A97F-8C9587A38371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9326A28A-1093-4579-A97F-8C9587A38371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9326A28A-1093-4579-A97F-8C9587A38371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF3445A-0F0B-4888-B963-3806A443FC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF3445A-0F0B-4888-B963-3806A443FC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF3445A-0F0B-4888-B963-3806A443FC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF3445A-0F0B-4888-B963-3806A443FC93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
